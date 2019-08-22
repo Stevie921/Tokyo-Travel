@@ -1,0 +1,526 @@
+body {
+	color: #ffe;
+}
+
+.background {
+	height: 550px;
+	background-image: url("https://bit.ly/2O1ZK64");
+	background-attachment: fixed;
+	background-position: 50% 50%;
+}
+
+h1 {
+	margin-top: 0;
+	margin-left: 25px;
+	color: #ffe;
+	font-size: 3em;
+	padding-top: 210px;
+}
+
+#kanji {
+	color: #BC002D;
+}
+
+nav {
+	margin: 0 auto;
+	height: 45px;
+	background: #BC002D;
+	padding: 5px;
+}
+
+#navbar {
+	text-align: center;
+	height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	display: inline;
+	margin: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+li:hover {
+	border-bottom: 2px solid #ffe;
+}
+
+a {
+	color: #ffe;
+	text-decoration: none;
+}
+
+#mobile-menu{
+	display: none;
+}
+
+.mobile-li {
+	display: none;
+	background: #BC002D;
+}
+
+
+
+p {
+	font-size: 1.2em;
+	padding: 0 15px;
+	text-align: center;
+}
+
+#about {
+	display: grid;
+	margin-top: 50px;
+	background-image: url("https://bit.ly/2SpzqBp");
+	height: 400px;
+	align-items: center;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 2em;
+}
+
+#about p {
+	text-align: center;
+}
+
+#overlay {
+	background: rgba(188,0,45,0.9);
+	height: 75%;
+	width: 75%;
+	margin: 0 auto;
+	padding: 2.1em;
+	display: flex;
+}
+
+#inner-border {
+	border: 2px solid #ffe;
+	align-self: center;
+}
+
+.placeholder {
+	background: #BC002D;
+	height: 300px;
+	min-width: 200px;
+	border: 2px solid;
+}
+
+#food {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 50px;
+	grid-gap: 5px;
+}
+
+#food-area {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	height: 350px;
+	background: #0A0908;
+	overflow: hidden;
+}
+
+#food-area p {
+	margin: 5px;
+	font-size: 1em;
+	padding-top: 15px;
+	line-height: 40px;
+}
+
+.japanese {
+	background: #ffe;
+	color: #BC002D;
+	border-radius: 5px;
+	line-height: 40px;
+}
+
+#food-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px 300px;
+	grid-gap: 5px;
+	margin-top: 15px;
+}
+
+.food-item {
+	overflow: hidden;
+	background-position: center;
+	cursor: pointer;
+}
+
+.food-name {
+	transition: width 1s linear;
+}
+
+.food-name {
+	font-size: 1.8em;
+	border-bottom: 3px solid #ffe;
+	width: 50%;
+	background: #BC002D;
+	text-align: center;
+	position: relative;
+	bottom: 300px;
+	letter-spacing: 2px;
+	transition: right 1s linear;
+	right: 0;
+}
+
+.food-info {
+	position: relative;
+	bottom: 250px;
+	background: rgba(188,0,45,0.9);
+	color: #ffe;
+	padding: 10px 0;
+	right: 800px;
+	transition: right 1s linear;
+}
+
+
+.food-item:hover  .food-info {
+	right: 0;
+}
+
+.food-item:hover .food-name {
+	right: 500px;
+
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel.carousel-slider {
+	height: 500px;
+	margin-top: 50px;
+	border: 2px solid;
+}
+
+.carousel .control-dots {
+	display: none;
+}
+
+.carousel .slide {
+	background: #fff;
+	padding: 0;
+	bottom: 1em;
+}
+
+.carousel .slider  {
+ justify-content: initial; 
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #BC002D;
+  height: 80px;
+  width: 50px;
+  opacity: 1;
+  margin-top: 240px;
+  }
+
+ .carousel.carousel-slider .control-arrow:hover {
+  background: #BC002D;
+ }
+
+ .carousel .thumbs {
+ 	text-align: center;
+ }
+
+.title {
+	font-size: 2em;
+}
+
+.area {
+	background: rgba(0,0,0,0.8);
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px;
+	position: relative;
+	bottom: 485px;
+	border-radius: 15px;
+}
+
+.show {
+	display: block;
+}
+
+#gallery {
+	width: 100%;
+	margin: 50px auto;
+	min-height: 750px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  
+	grid-gap: 1%;
+}
+
+.attractions {
+	width: 75%;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	justify-self: center;
+ }
+
+
+.attraction-name {
+	position: relative;
+  bottom: 200px;
+	width: 75%;
+	background: #ffe;
+	margin: 0 auto;
+	padding: 5px;
+	color: #111;
+	border-bottom: 5px solid #E98C60;
+	transition: bottom 1.5s linear;
+}
+
+.attractions:hover > .attraction-name {
+	bottom: 320px;
+}
+
+.info-hover {
+	position: relative;
+	height: 300px;
+	bottom: 325px;
+	left: 600px;
+	background: #E98C60;
+	
+	transition: left 1.5s linear;
+  cursor: default;
+  display: flex;
+	align-items: center;
+}
+
+.attractions:hover > .info-hover {
+	left: 0;
+ }
+
+ #travel {
+ 	width: 75%;
+ 	margin: 0 auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ 	justify-content: center;
+ }
+
+.travel-area {
+   height: 400px;
+   border: 2px solid #333;
+   width: 45%;
+   color: black;
+   margin: 10px;
+ }
+
+ .travel-title {
+ 	 font-size: 2em;
+ 	 border-bottom: 2px solid #BC002D;
+ 	 margin: 0;
+ }
+
+ .travel-title .fas {
+ 	 font-size: 1em;
+ 	 color: #BC002D;
+ 	 margin: 10px;
+ }
+
+ .travel-info {
+ 	 margin-top: 10px;
+ 	 
+ 	 word-wrap: break-word;
+  }
+
+
+#footer {
+	background: #BC002D;
+  margin-top: 25px;
+  padding: 10px;
+  height: 300px;
+}
+
+#signup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#signup span {
+	border: 2px solid #ffe;
+	padding: 3px;
+}
+
+input {
+  height: 25px;
+  width: 300px;
+  margin: 15px;
+  border: none;
+  font-size: 1.2em;
+}
+
+button {
+	height: 25px;
+	width: 150px;
+	border: none;
+  background: #ffe;
+  color: #BC002D;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#footer p {
+	margin-bottom: 0;
+	font-size: 1.5em;
+}
+
+/*MEDIA QUERIES FOR RESPONSIVE DESIGN */
+@media (max-width: 775px) {
+ .attractions {
+ 	 font-size: 0.9em;
+ }
+}
+
+@media (max-width: 795px) {
+	.food-name {
+		width: 100%;
+	}
+
+	.food-info {
+		bottom: 350px;
+		font-size: 1em;
+	}
+
+	.carousel .slide {
+		bottom: 5em;
+	}
+
+	.area {
+		bottom: 22em;
+	}
+
+	.carousel.carousel-slider .control-arrow {
+		margin-top: 25%;
+	}
+}
+
+@media (max-width: 850px) {
+.travel-area {
+    width: 100%;
+    height: auto;
+  }
+
+  #navbar {
+  	display: inline-block;
+  	float: right;
+  }
+
+ #mobile-menu {
+ 	display: inline-block;
+ }
+
+ li {
+ 	display: block;
+ 	background: #BC002D;
+ }
+
+}
+
+@media (min-width: 851px) {
+	.mobile-li {
+		display: inline-block;
+	}
+}
+
+
+@media (max-width: 975px) {
+	.attractions {
+		width: 100%;
+	}
+}
+
+@media (min-width: 839px) and (max-width: 1030px) {
+  #travel {
+  	width: 100%;
+  }
+
+	.travel-area {
+		width: 45%;
+		height: 350px;
+		font-size: 0.8em;
+	}
+}
+
+@media (max-width: 1000px){
+	.food-name {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 1000px){
+	.area {
+		bottom: 38em;
+	}
+}
+
+@media (max-width: 1065px){
+	#about p {
+    font-size: 1em;
+	}
+}
+
+@media (max-width: 1185px) {
+	#food-area {
+		grid-template-columns: 2fr 2fr;
+	}
+}
+
+@media (min-width: 1200px){
+	.area {
+		bottom: 42em;
+	}
+}
+
+@media (min-width: 1300px){
+	.area {
+		bottom: 45em;
+	}
+}
+
+@media (min-width: 1400px){
+	.area {
+		bottom: 50em;
+	}
+}
+
+@media (min-width: 1480px){
+	.area {
+		bottom: 53em;
+	}
+}
+
+@media (max-width: 1322px) {
+	#food-area p {
+		line-height: 35px;
+	}
+}
+
+@media (min-width: 1031px) and (max-width: 1450px) {
+  #travel {
+  	width: 100%;
+  }
+
+  .travel-area {
+  	height: 400px;
+  	font-size: 0.8em;
+  }
+}
+
+
